@@ -39,7 +39,7 @@ function Register() {
         };
       }
       const response = await fetch(
-        "https://hostel-complaint-system-2-0.onrender.com/register",
+        "http://localhost:3000/register",
         {
           method: "POST",
           headers: { "content-type": "application/json" },
@@ -139,11 +139,11 @@ function Register() {
 
           <div className="relative flex flex-col sm:w-full md:w-[30rem] lg:w-[30rem] xl:w-[30rem] 2xl:w-[30rem] rounded-lg border-gray-400 bg-white shadow-lg px-4">
             <div className="flex-auto p-6">
-              <div className="mb-10 flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center overflow-hidden">
+              <div className="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/en/4/4b/SGSITS_Indore.png"
                   alt="SGSITS Logo"
-                  className="h-16 w-16 object-contain mb-4"
+                  className="h-16 w-16 object-contain mr-2"
                 />
                 <a
                   href="#"
@@ -356,4 +356,5 @@ function Register() {
 }
 
 export default Register;
+
 
